@@ -1,0 +1,85 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Светло-серый фон, близкий к белому */
+    color: #333; /* Темно-серый текст */
+}
+
+/* Контейнер для центрирования содержимого */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    background-color: #fff; /* Белый фон */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Логотип */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4213d; /* Красный цвет из польского флага */
+    text-decoration: none;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Поиск */
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #d4213d; /* Красный цвет из польского флага */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Авторизация */
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth a {
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Основной контент */
+main {
+    padding: 40px 0;
+}
+
+/* Футер */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
