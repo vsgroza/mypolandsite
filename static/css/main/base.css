@@ -1,85 +1,112 @@
-/* Общие стили */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Светло-серый фон, близкий к белому */
-    color: #333; /* Темно-серый текст */
-}
-
-/* Контейнер для центрирования содержимого */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Шапка */
 header {
-    background-color: #fff; /* Белый фон */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #d32f2f; /* Красный цвет фона */
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Вертикальное выравнивание по центру */
 }
 
 /* Логотип */
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #d4213d; /* Красный цвет из польского флага */
+    color: #fff; /* Белый цвет текста логотипа */
     text-decoration: none;
 }
 
 /* Навигация */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
-nav li {
+nav ul li {
     margin-right: 20px;
 }
 
-nav a {
-    color: #333;
+nav ul li a {
+    color: #fff; /* Белый цвет текста в навигации */
     text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-/* Поиск */
-.search input {
-    padding: 10px;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Поисковая строка */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 200px;
+    border-radius: 4px;
 }
 
 .search button {
-    padding: 10px 20px;
-    background-color: #d4213d; /* Красный цвет из польского флага */
-    color: #fff;
+    background-color: #d32f2f; /* Красный цвет кнопки */
+    color: #fff; /* Белый цвет текста на кнопке */
     border: none;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
-/* Авторизация */
+.search button:hover {
+    background-color: #b71c1c; /* Более темный красный при наведении */
+}
+
+/* Аутентификация */
 .auth {
     display: flex;
     align-items: center;
 }
 
 .auth a {
-    margin-left: 10px;
-    color: #333;
+    color: #fff; /* Белый цвет текста */
     text-decoration: none;
+    margin-left: 20px;
+}
+
+.auth a:hover {
+    text-decoration: underline;
 }
 
 /* Основной контент */
 main {
     padding: 40px 0;
+    text-align: center;
 }
 
-/* Футер */
+main h1 {
+    font-size: 36px;
+    color: #d32f2f; /* Красный цвет заголовка */
+}
+
+main p {
+    font-size: 18px;
+    color: #000; /* Черный цвет текста */
+}
+
+/* Подвал */
 footer {
-    background-color: #fff;
+    background-color: #d32f2f; /* Красный цвет фона */
+    color: #fff; /* Белый цвет текста */
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
 }
