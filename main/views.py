@@ -15,7 +15,7 @@ def index(request):
     }
     return render(request, 'main/index.html', context)
 
-def category_list(request):
+def category_list(request, pk):
     """Реацкция на нажатие кнопки категории"""
     posts = Post.objects.filter(category_id=pk)
     categories = Category.objects.all()
