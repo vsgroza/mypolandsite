@@ -3,3 +3,4 @@
 ./app/logs/uwsgi.log
 ./app/manager/__pycache__
 node_modules
+.idea/*
