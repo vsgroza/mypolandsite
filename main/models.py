@@ -1,3 +1,5 @@
+from audioop import reverse
+from django.urls import reverse
 from django.db import models
 
 class Category(models.Model):
@@ -7,6 +9,9 @@ class Category(models.Model):
     """Показывает в базе название категории, а не объекта"""
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('category_list', kwargs={'pk': self.pk})
 
     """Указывает в таблицах множественное и единственное число"""
     class Meta:
@@ -29,6 +34,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post_detail', kwargs={'pk': self.pk})
 
     """Указывает в таблицах множественное и единственное число"""
 
