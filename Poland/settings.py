@@ -128,9 +128,10 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 def show_toolbar(request):
-    if hasattr(request, 'user'):
-        return request.user.is_superuser
-    return False
+    return True
+    # if hasattr(request, 'user'):
+    #     return request.user.is_superuser
+    # return False
 
 DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TOOLBAR_CALLBACK': 'Poland.settings.show_toolbar',
