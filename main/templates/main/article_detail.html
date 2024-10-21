@@ -6,9 +6,9 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">{{ post.category }}
                     <div>
-                        <a href="#!" class="btn btn-dark">Удалить</a>
-                        <a href="#!" class="btn btn-dark">Изменить</a>
-                        <a href="#!" class="btn btn-dark">Назад</a>
+                        <a href="{% url 'post_delete' post.pk %}" class="btn btn-dark">Удалить</a>
+                        <a href="{% url 'post_update' post.pk %}" class="btn btn-dark">Изменить</a>
+                        <a href="{% url 'category_list' post.category.pk %}" class="btn btn-dark">Назад</a>
                     </div>
                 </div>
                 <img src="" class="card-img-top" alt="">
@@ -39,7 +39,7 @@
                 <button class="btn btn-dark" type="submit">Добавить комментарий</button>
             </form>
 
-            <div class="card mt-2"><h5 class="card-header">Какой то человек</h5>
+            <div class="card mt-2"><h5 class="card-header">Какой-то человек</h5>
                 <div class="card-body">
                     <p class="card-text">Текст отзыва</p>
                 </div>
@@ -48,7 +48,7 @@
         <!--  Recommendation-->
         <div class="col-1"></div>
         <div class="col-4">
-            {% for ext in ext_post %}
+            {% for ext in ext_posts %}
             <div class="card" style="width: 18rem;">
             {% if ext.photo %}
                 <img class="card-img-top" src="{{ ext.photo.url}}" width="200" alt="">
